@@ -1,0 +1,68 @@
+body{
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("images/loc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+}
+h2 {
+  display: flex;
+  color: aliceblue;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+button {
+  display: flex;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  background-color: rgb(34, 157, 81);
+  cursor: pointer;
+  color: aliceblue;
+  transition-duration: 0.4s;
+  
+}
+
+button:hover {
+  background-color: #2d21cf;
+  color: white;
+  transform: scale(1.2);
+}
+
+#preview {
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 5%;
+  
+ 
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(0.1);
+    background-color: transparent;
+    border-radius: 100%;
+  }
+  50% {
+    background-color: transparent;
+  }
+  100% {
+    transform: scale(1.25);
+    background-color: white;
+  }
+}
+
